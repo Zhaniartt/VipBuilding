@@ -1,0 +1,933 @@
+<div class="wrapper-div">
+    <div>
+        <ul class="filter-links">
+            <li class="all"><a  (click)="clicks($event)"  id="allofthem" class="all" href="#">Всички</a></li>
+            <li><a (click)="clicks($event)" id="testing" class="javascript" href="#">Завършени</a></li>
+            <li><a  (click)="clicks($event)"  id="forsale" class="html" href="#">За продажба</a>
+            </li>
+          </ul>
+    </div>
+    <div class="section-div">
+      <div class="bg"></div>
+        <div class="container">
+            <h1 style="font-size: 56px" class="sixth">ОБЕКТИ</h1>
+        </div>
+      
+      <div class="filter-sections">
+        
+        <div class="html"><img id="one" width="300px" height="300px" src="../../assets/images/var4_001-1.jpg" alt=""><p>Жилищна сграда „Чайка“ гр. Варна</p><button *ngIf="isLogged" type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="two" width="300px" height="300px" src="../../assets/images/V10 (1).jpg" alt=""><p>Жилищна сграда "K. Щъркелов“ 7 гр.Варна</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="javascript"><img id="three"  width="300px" height="300px" src="../../assets/images/file-page3 (1).jpg" alt=""><p>Жилищна сграда „Домино“, гр.Варна</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="javascript"><img id="four" width="300px" height="300px" src="../../assets/images/snimka-1 (1).jpg" alt=""><p>гр. Варна ул.Дубровник 36</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+
+        <div class="html"><img id="five" width="300px" height="300px" src="../../assets/images/к-с-Златни-пясъци-х-л-София-2.jpg" alt=""><p>к-с Златни пясъци, х-л „София“</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="six" width="300px" height="300px" src="../../assets/images/Български-орел.jpg" alt=""><p>гр.Варна, ул."Български орел"14</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+        <div class="javascript"><img id="ten" width="300px" height="300px" src="../../assets/images/Варна-ул.-Бели-Лилии-2.jpg" alt=""><p>гр. Варна, ул. „Бели Лилии“ 20</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="seven" width="300px" height="300px" src="../../assets/images/Варна-ул.-Синчец-35-1.jpg" alt=""><p>гр. Варна, ул. „Синчец“ 3</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="thirdteen"  width="300px" height="300px" src="../../assets/images/han-part.jpg" alt=""><p>Жилищна сграда „Хан Кубрат 38″ гр.Варна</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="nine" width="300px" height="300px" src="../../assets/images/Варна-ул.-Цар-Иван-Александър-7-1.jpg" alt=""><p>Жилищна сграда, ул. „Цар Иван Александър“ 7</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="javascript"><img id="twelve" width="300px" height="300px" src="../../assets/images/velichkov/konst-4.jpg" alt=""><p>Жилищна сграда, „Константин Величков 18″</p><button  *ngIf="isLogged"  type="button" class="btn btn-warning">Delete</button>
+        </div>
+        <div class="html"><img id="eight" width="300px" height="300px" src="../../assets/images/Варна-ул.-Черни-връх-4-1.jpg" alt=""><p>гр. Варна, ул. „Черни връх“ 4</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+        <div class="javascript"><img id="eleven" width="300px" height="300px" src="../../assets/images/Варна-ул.-Хан-Кубрат-2-2.jpg" alt=""><p>гр. Варна ул. „Хан Кубрат“</p><button type="button"  *ngIf="isLogged"  class="btn btn-warning">Delete</button>
+        </div>
+
+      </div>
+    </div>
+      
+</div>
+
+
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">Жилищна сграда „Чайка“ гр. Варна</h1>
+      <h5>РЗП: 1066<br>
+          Апартаменти: 10</h5>
+          <ul id="imaged">
+              <li>6 надземни етажа</li>
+              <li>подземни гаражи</li>
+              <li>3 магазина на партерен етаж</li>
+              <li>2 двустайни апартамента</li>
+              <li>7 тристайни апартамента</li>
+              <li>1 четиристаен апартамент</li>
+            </ul>
+       <h6>Начало Януари 2018г. / Предвиден Край Октомври 2020г.
+        </h6>     
+        
+<div class="container table-responsive py-5"> 
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ЕТАЖ</th>
+          <th scope="col">ЧАЙКА</th>
+          <th scope="col">ПЛОЩ</th>
+          <th scope="col">ОБЩИ ЧАСТИ</th>
+          <th scope="col">ОБЩО</th>
+          <th scope="col">ВИД</th>
+          <th scope="col">ЦЕНА</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ПАРТЕР</th>
+          <td>Магазин 1</td>
+          <td>38,8</td>
+          <td>6,59</td>
+          <td>45,42</td>
+          <td></td>
+          <td>84 000 €</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">ПАРТЕР</th>
+          <td>Магазин 3</td>
+          <td>57,52</td>
+          <td>9,63</td>
+          <td>67,34</td>
+          <td></td>
+          <td>126 000 €</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Апартамент 8</td>
+          <td>76,6</td>
+          <td>15,14</td>
+          <td>91,74</td>
+          <td>тристаен</td>
+          <td>118 000 €</td>
+          
+        </tr>
+         <tr>
+          <th scope="row">3</th>
+          <td>Апартамент 3</td>
+          <td>76,6</td>
+          <td>15,14</td>
+          <td>91,74</td>
+          <td>тристаен</td>
+          <td>114 000 €</td>
+           
+        </tr>
+      </tbody>
+    </table>
+    <div class="imgDiv">
+      <div>
+        <p style="color: black">Етаж 3</p>
+        <a href="../../assets/images/chaika/ЧАЙКА-ЕТАЖ-3.jpg" target="_blank">
+        <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/ЧАЙКА-ЕТАЖ-3.jpg" alt="">
+      </a>
+      </div>
+      <div>
+        <p style="color: black">Етаж 5</p>
+        <a href="../../assets/images/chaika/ЧАЙКА-ЕТАЖ-5.jpg" target="_blank">
+        <img class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/ЧАЙКА-ЕТАЖ-5.jpg" alt="">
+      </a>
+      </div>
+    </div>
+    <button id="close-button" type="button" class="btn btn-dark">Затвори</button>
+    </div>
+    
+
+    
+    </div>
+  
+  </div>
+
+  <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 style="color: black;font-family: 'Cuprum', sans-serif;">Жилищна сграда „Константин Щъркелов“ 7 гр.Варна</h1>
+        <h5>РЗП: 1765<br>
+            Апартаменти: 17</h5>
+            <ul id="imaged">
+                <li>6 надземни етажа</li>
+                <li>9 външни паркови места</li>
+                <li>6 гаража, от които 2 двойни</li>
+                <li>1 едностаен апартамент</li>
+                <li>10 двустайни апартамента</li>
+                <li>5 тристайни апартамента</li>
+                <li>1 четиристаен апартамент</li>
+              </ul>
+         <h6>Начало Април 2019г. / Предвиден Край Ноември 2020г.
+          </h6>     
+          
+  <div class="container table-responsive py-5"> 
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ЕТАЖ</th>
+            <th scope="col">K.Щъркелов 7</th>
+            <th scope="col">ПЛОЩ</th>
+            <th scope="col">ОБЩИ ЧАСТИ</th>
+            <th scope="col">ОБЩО</th>
+            <th scope="col">ВИД</th>
+            <th scope="col">ЦЕНА</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">-1</th>
+            <td>Гараж 7</td>
+            <td>38,8</td>
+            <td>6,59</td>
+            <td>45,42</td>
+            <td></td>
+            <td>12 000 €</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">-1</th>
+            <td>Гараж 10</td>
+            <td>57,52</td>
+            <td>9,63</td>
+            <td>67,34</td>
+            <td></td>
+            <td>14 000 €</td>
+            
+          </tr>
+       
+        </tbody>
+      </table>
+      <div class="imgDiv">
+        <div>
+          <p style="color: black">Гараж 7 и Гараж 10</p>
+          <a href="../../assets/images/chaika/12dd.jpg" target="_blank">
+          <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/12dd.jpg" alt="">
+        </a>
+        </div>
+
+      </div>
+      <button id="close-button2" type="button" class="btn btn-dark">Затвори</button>
+      </div>
+      
+  
+      
+      </div>
+    
+    </div>
+
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 style="color: black;font-family: 'Cuprum', sans-serif;">Жилищна сграда „Домино“, гр.Варна</h1>
+          <h5>РЗП: 2553<br>
+              Апартаменти: 17<br>
+              Къщи: 3
+            </h5>
+           <h6>Начало Февруари 2016 /Предвиден Край 2017
+
+            </h6>     
+            
+    <div class="container table-responsive py-5"> 
+        <div class="imgDiv">
+          <div>
+              <div>
+                  <a href="../../assets/images/chaika/file-page3.jpg" target="_blank">
+                  <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/file-page3.jpg" alt="">
+                </a>
+                </div>
+                <div>
+                    <a href="../../assets/images/chaika/file-page4.jpg" target="_blank">
+                      <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/file-page4.jpg" alt="">
+                    </a>
+                </div>
+          </div>
+          <div>
+              <div>
+                  <a href="../../assets/images/chaika/file-page5.jpg" target="_blank">
+                  <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/file-page5.jpg" alt="">
+                </a>
+                </div>
+                <div>
+                    <a href="../../assets/images/chaika/file-page7.jpg" target="_blank">
+                      <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/chaika/file-page7.jpg" alt="">
+                    </a>
+                </div>
+          </div>  
+        </div>
+        <button id="close-button3" type="button" class="btn btn-dark">Затвори</button>
+        </div>
+        
+    
+        
+        </div>
+      
+      </div>    
+  
+      <div id="myModal4" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна , ул.Дубровник 36</h1>
+            <h5>РЗП: 2000<br>
+                Апартаменти: 17<br>
+                Магазини: 2 <br>
+                Ресторант: 1 <br>
+                Подземен паркинг
+              </h5>
+             <h6>
+                Започната- юли 2015/
+                Предвидено завършване – декември 2016
+              </h6>     
+              
+      <div class="container table-responsive py-5"> 
+          <div class="imgDiv">
+                <div>
+                    <a href="../../assets/images/chaika/dubrovnik/snimka-1.jpg" target="_blank">
+                    <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/chaika/dubrovnik/snimka-1.jpg" alt="">
+                  </a>
+                  </div>
+                  <div>
+                      <a href="../../assets/images/chaika/dubrovnik/snimka-2.jpg" target="_blank">
+                        <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/chaika/dubrovnik/snimka-2.jpg" alt="">
+                      </a>
+                  </div>
+                  <div>
+                      <a href="../../assets/images/chaika/dubrovnik/snimka-3.jpg" target="_blank">
+                        <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/chaika/dubrovnik/snimka-3.jpg" alt="">
+                      </a>
+                  </div>
+          </div>
+          <button id="close-button4" type="button" class="btn btn-dark">Затвори</button>
+          </div>
+          
+      
+          
+          </div>
+        
+        </div>    
+        <div id="myModal5" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1 style="color: black;font-family: 'Cuprum', sans-serif;">к-с Златни пясъци, х-л „София“</h1>
+              <h5>РЗП: 12 782 кв.м<br>
+                  Етажи: 8 <br>
+                </h5>
+               <h6>
+                  Въведена в експлоатация: 2004 г.
+                </h6>     
+                
+        <div class="container table-responsive py-5"> 
+          <p style="color: black">*Извършен е основен външен и вътрешен ремонт, изцяло обновена фасадна част , декорирана с фасадни орнаменти, подчертаващи
+              формата на сградата.</p>
+            <div class="imgDiv">
+                  <div>
+                      <a href="../../assets/images/sofia hotel/к-с-Златни-пясъци-х-л-София-1.jpg" target="_blank">
+                      <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/к-с-Златни-пясъци-х-л-София-1.jpg" alt="">
+                    </a>
+                    </div>
+                    <div>
+                        <a href="../../assets/images/sofia hotel/Hotel-sofia.jpg" target="_blank">
+                          <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/Hotel-sofia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="../../assets/images/sofia hotel/Hotel-sofiaa.jpg" target="_blank">
+                          <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/Hotel-sofiaa.jpg" alt="">
+                        </a>
+                    </div>
+            </div>
+            <p style="color: black">*Цялостно обновяване на външен басейн както плувните му площи, така и настилката около него.</p>
+            <div class="imgDiv">
+                <div>
+                    <a href="../../assets/images/sofia hotel/star-basein.jpg" target="_blank">
+                      <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/star-basein.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="../../assets/images/sofia hotel/nov-basein.jpg" target="_blank">
+                    <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/nov-basein.jpg" alt="">
+                  </a>
+                  </div>
+                </div>
+                <p style="color: black">*Цялостно обновяване както по интериора, така и по екстериора на Хотела.</p>
+                <div class="imgDiv">
+                    <div>
+                        <a href="../../assets/images/sofia hotel/stara-staq.jpg" target="_blank">
+                          <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/stara-staq.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="../../assets/images/sofia hotel/nova-staq.jpg" target="_blank">
+                        <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/nova-staq.jpg" alt="">
+                      </a>
+                      </div>
+                      <div>
+                          <a href="../../assets/images/sofia hotel/stara-staqq.jpg" target="_blank">
+                            <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/stara-staqq.jpg" alt="">
+                          </a>
+                      </div>
+                      <div>
+                          <a href="../../assets/images/sofia hotel/nova-staqq.jpg" target="_blank">
+                          <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sofia hotel/nova-staqq.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+            <button id="close-button5" type="button" class="btn btn-dark">Затвори</button>
+            </div>
+            
+        
+            
+            </div>
+          
+          </div>  
+          <div id="myModal6" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр.Варна, ул.Български орел 14</h1>
+                <h5>РЗП: 3 105 кв.м<br>
+                    Етажи: 8 <br>
+                  </h5>
+                 <h6>
+                    Въведена в експлоатация: 2011 г.
+                  </h6>     
+                  
+          <div class="container table-responsive py-5"> 
+                  <div class="imgDiv">
+                        <div>
+                            <a href="../../assets/images/Български-орел.jpg" target="_blank">
+                              <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/Български-орел.jpg" alt="">
+                            </a>
+                        </div>
+                      </div>
+              <button id="close-button6" type="button" class="btn btn-dark">Затвори</button>
+              </div>
+              
+          
+              
+              </div>
+            
+            </div>                  
+
+ 
+            <div id="myModal7" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна, ул. „Синчец“ 5</h1>
+                  <h5>
+                      Апартаменти: 15
+                    </h5>
+                   <h6> РС №533/12.09.2007 год., акт 16 – 03.2010 год.
+                    </h6>     
+                    
+            <div class="container table-responsive py-5"> 
+                <div class="imgDiv">
+                  <div>
+                      <div>
+                          <a href="../../assets/images/sinchez3/Варна-ул.-Синчец-35-1.jpg" target="_blank">
+                          <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/sinchez3/Варна-ул.-Синчец-35-1.jpg" alt="">
+                        </a>
+                        </div>
+                        <div>
+                            <a href="../../assets/images/sinchez3/Варна-ул.-Синчец-35-2.jpg" target="_blank">
+                              <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/sinchez3/Варна-ул.-Синчец-35-2.jpg" alt="">
+                            </a>
+                        </div>
+                  </div>
+                  <div>
+                      <div>
+                          <a href="../../assets/images/sinchez3/Варна-ул.-Синчец-35-3.jpg" target="_blank">
+                          <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/sinchez3/Варна-ул.-Синчец-35-3.jpg" alt="">
+                        </a>
+                        </div>
+                        <div>
+                            <a href="../../assets/images/sinchez3/Варна-ул.-Синчец-35-2.jpg" target="_blank">
+                              <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/sinchez3/Варна-ул.-Синчец-35-2.jpg" alt="">
+                            </a>
+                        </div>
+                  </div>  
+                </div>
+                <button id="close-button7" type="button" class="btn btn-dark">Затвори</button>
+                </div>
+                
+            
+                
+                </div>
+              
+              </div>    
+ 
+              <div id="myModal8" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна, ул. „Черни връх“ 4</h1>
+                    <h5>РЗП: 2000<br>
+                        Апартаменти: 10<br>
+                        Ателиета: 2 <br>
+                      </h5>
+                      
+              <div class="container table-responsive py-5"> 
+                  <div class="imgDiv">
+                        <div>
+                            <a href="../../assets/images/sinchez3/Варна-ул.-Черни-връх-4-1.jpg" target="_blank">
+                            <img style="padding-left: 5px" class="d-block w-100" align="center" height="600px" width="300px" src="../../assets/images/sinchez3/Варна-ул.-Черни-връх-4-1.jpg" alt="">
+                          </a>
+                          </div>
+                          <div>
+                              <a href="../../assets/images/sinchez3/Варна-ул.-Черни-връх-4-2.jpg" target="_blank">
+                                <img  style="padding-left: 5px" class="d-block w-100" align="center" height="600px" width="300px" src="../../assets/images/sinchez3/Варна-ул.-Черни-връх-4-2.jpg" alt="">
+                              </a>
+                          </div>
+                  </div>
+                  <button id="close-button8" type="button" class="btn btn-dark">Затвори</button>
+                  </div>
+                  
+              
+                  
+                  </div>
+                
+                </div>                        
+                <div id="myModal9" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна, ул. „Цар Иван Александър“ 7</h1>
+                      <h5>РЗП: 1533,33 кв.м<br>
+                          Етажи: 8 <br>
+                        </h5>
+                        <ul id="imaged">
+                            <li>5 надземни етажа</li>
+                            <li>10 паркови места в подземен паркинг</li>
+                            <li>2 магазина на партерния етаж</li>
+                            <li>1 боксониера</li>
+                            <li>6 двустайни апартамента</li>
+                            <li>6 тристайни апартамента</li>
+                          </ul>
+                       <h6>
+                        Модерна, разчупена и бутикова архитектура. Детайлите по сградата са изработени от ковано желязо.
+                        Въведена в експлоатация с удостоверение 156/18.12.2012
+                        </h6>     
+                        
+                <div class="container table-responsive py-5"> 
+                    <div class="imgDiv">
+                          <div>
+                              <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-1.jpg" target="_blank">
+                              <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-1.jpg" alt="">
+                            </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-2.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-2.jpg"alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-3.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-3.jpg"alt="">
+                                </a>
+                            </div>
+                    </div>
+                    <div class="imgDiv">
+                        <div>
+                            <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-4.jpg" target="_blank">
+                              <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="400px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-5.jpg" target="_blank">
+                            <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-5.jpg" alt="">
+                          </a>
+                          </div>
+                        </div>
+                        <div class="imgDiv">
+                            <div>
+                                <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-6.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-7.jpg" target="_blank">
+                                <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-7.jpg" alt="">
+                              </a>
+                              </div>
+                              <div>
+                                  <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-8.jpg" target="_blank">
+                                    <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-8.jpg"  alt="">
+                                  </a>
+                              </div>
+                              <div>
+                                  <a href="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-9.jpg" target="_blank">
+                                  <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/sinchez3/Варна-ул.-Цар-Иван-Александър-7-9.jpg" alt="">
+                                </a>
+                                </div>
+                            </div>
+                    <button id="close-button9" type="button" class="btn btn-dark">Затвори</button>
+                    </div>
+                    
+                
+                    
+                    </div>
+                  
+                  </div>                
+                  <div id="myModal10" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна, ул. „Бели Лилии“ 20</h1>                        
+                <div class="container table-responsive py-5"> 
+                    <div class="imgDiv">
+                      <div>
+                          <div>
+                              <a href="../../assets/images/Варна-ул.-Бели-Лилии-111.jpg" target="_blank">
+                              <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/Варна-ул.-Бели-Лилии-111.jpg" alt="">
+                            </a>
+                            </div>
+                      </div>
+                      <div>
+                          <div>
+                              <a href="../../assets/images/Варна-ул.-Бели-Лилии-222.jpg" target="_blank">
+                              <img  class="d-block w-100" align="center" height="400px" width="400px" src="../../assets/images/Варна-ул.-Бели-Лилии-222.jpg" alt="">
+                            </a>
+                            </div>
+                      </div>  
+                    </div>
+                    <button id="close-button10" type="button" class="btn btn-dark">Затвори</button>
+                    </div>
+                    
+                
+                    
+                    </div>
+                  
+                  </div>     
+                  <div id="myModal11" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">гр. Варна ул. „Хан Кубрат“</h1>
+                      <h5>РЗП:  2221,83 кв.м<br>
+                        </h5>
+                        <ul id="imaged">
+                            <li>9 надземни етажа</li>
+                            <li>4 външни паркови места</li>
+                            <li>20 паркови места в подземен паркинг</li>
+                            <li>2 магазина на партерния етаж</li>
+                            <li>6 боксониери</li>
+                            <li>6 двустайни апартамента</li>
+                            <li>9 тристайни апартамента</li>
+                          </ul>
+                       <h6>
+                        Сградата се намира с лице към МОЛ Варна. Орнаментите по фасадата – первази и колони, са от естествен камък. Подземният паркинг е с автомобилна платформа. Етап на строежа – акт 15.
+                        </h6>     
+                        
+                <div class="container table-responsive py-5"> 
+                    <div class="imgDiv">
+                          <div>
+                              <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-1.jpg" target="_blank">
+                              <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-1.jpg" alt="">
+                            </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-2.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-3.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-3.jpg"  alt="">
+                                </a>
+                            </div>
+                    </div>
+                    <div class="imgDiv">
+                        <div>
+                            <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-4.jpg" target="_blank">
+                              <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="400px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-5.jpg" target="_blank">
+                            <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-5.jpg" alt="">
+                          </a>
+                          </div>
+                        </div>
+                        <div class="imgDiv">
+                            <div>
+                                <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-6.jpg" target="_blank">
+                                  <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-7.jpg" target="_blank">
+                                <img style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-7.jpg" alt="">
+                              </a>
+                              </div>
+                              <div>
+                                  <a href="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-8.jpg" target="_blank">
+                                    <img  style="padding-left: 5px" class="d-block w-100" align="center" height="300px" width="500px" src="../../assets/images/han kubrat/Варна-ул.-Хан-Кубрат-2-8.jpg" alt="">
+                                  </a>
+                              </div>
+                            </div>
+                    <button id="close-button11" type="button" class="btn btn-dark">Затвори</button>
+                    </div>
+                    
+                
+                    
+                    </div>
+                  
+                  </div>                                       
+                  <div id="myModal12" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">Жилищна сграда „Константин Величков 18″</h1>
+                      <h5>РЗП: 660 кв.м.<br>
+                          Апартаменти: 8</h5>
+                          <ul id="imaged">
+                              <li>6 надземни етажа</li>
+                              <li>2 външни паркови места</li>
+                              <li>2 външни паркови места</li>
+                              <li>4 гаража</li>
+                              <li>4 двустайни апартамента</li>
+                              <li>4 тристайни апартамента</li>
+                            </ul>
+                       <h6>Начало Юли 2020г. / Предвиден край Май 2021г.
+                        </h6>     
+                        
+                <div class="container table-responsive py-5"> 
+                    <table class="table table-bordered table-hover">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">ЕТАЖ</th>
+                          <th scope="col">К.Величков 18</th>
+                          <th scope="col">ПЛОЩ</th>
+                          <th scope="col">ОБЩИ ЧАСТИ</th>
+                          <th scope="col">ОБЩО</th>
+                          <th scope="col">ВИД</th>
+                          <th scope="col">ЦЕНА</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">ПАРТЕР</th>
+                          <td>Гараж 1</td>
+                          <td>17,44</td>
+                          <td>5,56</td>
+                          <td>23,00</td>
+                          <td>единичен</td>
+                          <td>19 800€</td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Апартамент 5</td>
+                          <td>60,38</td>
+                          <td>19,25</td>
+                          <td>79,63</td>
+                          <td>тристаен</td>
+                          <td> 68 000 €</td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Апартамент 7</td>
+                          <td>65,99</td>
+                          <td>21,03</td>
+                          <td>87,02</td>
+                          <td>тристаен</td>
+                          <td>78 000 €</td>
+                          
+                        </tr>
+                         <tr>
+                          <th scope="row">6</th>
+                          <td>Апартамент 8</td>
+                          <td>55,76</td>
+                          <td>17,77</td>
+                          <td>73,53</td>
+                          <td>двустаен</td>
+                          <td>64 000 €</td>
+                           
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="imgDiv">
+                      <div>
+                        <p style="color: black">Апартамент 5</p>
+                        <a href="../../assets/images/velichkov/konst-4.jpg" target="_blank">
+                        <img  class="d-block w-100" align="center" height="200px" width="400px" src="../../assets/images/velichkov/konst-4.jpg" alt="">
+                      </a>
+                      </div>
+                      <div>
+                          <p style="color: black">Апартамент 7</p>
+                        <a href="../../assets/images/velichkov/konst-5.jpg" target="_blank">
+                        <img class="d-block w-100" align="center" height="200px" width="400px" src="../../assets/images/velichkov/konst-5.jpg" alt="">
+                      </a>
+                      </div>
+                      <div>
+                          <p style="color: black">Апартамент 8</p>
+
+                        <a href="../../assets/images/velichkov/konst-6.jpg" target="_blank">
+                        <img class="d-block w-100" align="center" height="200px" width="400px" src="../../assets/images/velichkov/konst-6.jpg" alt="">
+                      </a>
+                      </div>
+                          <div>
+                              <p style="color: black">Гараж</p>
+                        <a href="../../assets/images/velichkov/konst.jpg" target="_blank">
+                        <img class="d-block w-100" align="center" height="200px" width="400px" src="../../assets/images/velichkov/konst.jpg" alt="">
+                      </a>
+                      </div>
+                    </div>
+                    <button id="close-button12" type="button" class="btn btn-dark">Затвори</button>
+                    </div>
+                    
+                
+                    
+                    </div>
+                  
+                  </div>   
+                  <div id="myModal13" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 style="color: black;font-family: 'Cuprum', sans-serif;">Жилищна сграда „Хан Кубрат 38″ гр.Варна</h1>
+                      <h5>Жилищна сграда „Хан Кубрат“
+                        гр.Варна, кв. Трошево ул. “Хан Кубрат 38″</h5>
+                      <h5>РЗП: 900 кв.м.<br>
+                          Апартаменти: 900</h5>
+                          <ul id="imaged">
+                              <li>7 надземни етажа</li>
+                              <li>4 външни паркови места</li>
+                              <li>4 гаража,от които 1 двоен</li>
+                              <li>7 двустайни апартамента</li>
+                              <li>4 тристайни апартамента</li>
+                            </ul>
+                       <h6>Начало Септември 2018г. / Предвиден край Януари 2020г.
+
+                        </h6>     
+                        
+                <div class="container table-responsive py-5"> 
+                    <table class="table table-bordered table-hover">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">ЕТАЖ</th>
+                          <th scope="col">К.Величков 7</th>
+                          <th scope="col">ПЛОЩ</th>
+                          <th scope="col">ОБЩИ ЧАСТИ</th>
+                          <th scope="col">ОБЩО</th>
+                          <th scope="col">ВИД</th>
+                          <th scope="col">ЦЕНА</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">7</th>
+                          <td>Апартамент 11</td>
+                          <td>68,29</td>
+                          <td>14,92</td>
+                          <td>83,21</td>
+                          <td>тристаен</td>
+                          <td>58 900 €</td>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">Партер</th>
+                          <td>Паркомясто</td>
+                          <td>30,72</td>
+                          <td></td>
+                          <td>30,72</td>
+                          <td></td>
+                          <td> 6 000 €</td>
+                          
+                        </tr>
+
+                      </tbody>
+                    </table>
+                    <div class="imgDiv">
+                      <div>
+                          <p style="color:black">Паркомясто</p>
+                        <a href="../../assets/images/han-part.jpg" target="_blank">
+                        <img  class="d-block w-100" align="center" height="400px" width="200px" src="../../assets/images/han-part.jpg" alt="">
+                      </a>
+                      </div>
+                          <div>
+                          <p style="color:black">Апартамент 11</p>
+                        <a href="../../assets/images/han-44.jpg" target="_blank">
+                        <img class="d-block w-100" align="center" height="400px" width="200px" src="../../assets/images/han-44.jpg" alt="">
+                      </a>
+                      </div>
+                    </div>
+                    <button id="close-button13" type="button" class="btn btn-dark">Затвори</button>
+                    </div>
+                    
+                
+                    
+                    </div>
+                  
+                  </div>   
+                  <footer  class="page-footer font-small special-color-dark pt-4">
+
+                      <!-- Footer Elements -->
+                      <div class="container">
+                    
+                        <!-- Social buttons -->
+                        <ul class="list-unstyled list-inline text-center">
+                          <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1">
+                              <i class="fab fa-facebook-f"> </i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1">
+                              <i class="fab fa-twitter"> </i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1">
+                              <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1">
+                              <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a class="btn-floating btn-dribbble mx-1">
+                              <i class="fab fa-dribbble"> </i>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- Social buttons -->
+                    
+                      </div>
+                      <!-- Footer Elements -->
+                    
+                      <!-- Copyright -->
+                      <div style="color: white" class="footer-copyright text-center py-3">© 2020 Copyright: VIP BUILDING GROUP
+                      </div>
+                      <!-- Copyright -->
+                    
+                    </footer>                                              

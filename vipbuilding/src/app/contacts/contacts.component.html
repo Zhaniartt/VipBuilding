@@ -1,0 +1,81 @@
+<div class="mainClass">
+    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 282px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.858192508811!2d27.900844515268407!3d43.212463579138856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a454777006fe0b%3A0x9fc5fcd2dcb868f3!2z0YPQuy4g4oCe0KfQtdGA0L3QuCDQstGA0YrRheKAnCA0LCA5MDAwINCl0YDQuNGB0YLQviDQkdC-0YLQtdCyLCDQktCw0YDQvdCwLCDQkdGK0LvQs9Cw0YDQuNGP!5e0!3m2!1sbg!2sus!4v1602063471564!5m2!1sbg!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+<div>
+      <section id="contact">
+        <h3 class="section-header">Свържете се с нас</h3>
+        <div class="secDiv">
+          
+            <div class="contact-wrapper">
+              
+                <!---------------- 
+          
+                CONTACT PAGE LEFT 
+              
+                -----------------> 
+              
+              <form action="https://mailthis.to/janiat94"
+              method="POST" encType="multipart/form-data" class="form-horizontal" role="form" method="post" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+                 
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input formControlName="Fullname" type="text" class="form-control" id="name" placeholder="ИМЕ" name="name" value="">
+                  </div>
+                </div>
+          
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input formControlName="Email" type="email" class="form-control" id="email" placeholder="ИМЕЙЛ" name="email" value="">
+                  </div>
+                </div>
+          
+                <textarea formControlName="Comment" style="margin-left: 16px" class="form-control" rows="10" placeholder="СЪОБЩЕНИЕ" name="Comment"></textarea>
+                
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">   
+                  ИЗПРАТИ   
+                </button>
+              </form>
+        </div>
+            
+              <div class="direct-contact-container">
+        
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Варна | ул.Черни връх 4</span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+ 359 (52) 655552</a></span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:vip_building@abv.bg" title="Send me an email">vip_building@abv.bg</a></span></i></li>
+                  <div class="post-fx"><img class="fx" src="../../assets/images/Logo_png1.png" /></div>
+                </ul>
+        
+                <hr>
+                <ul class="social-media-list">
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i style="padding-top: 18px;"  class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i style="padding-top: 18px;" class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i style="padding-top: 18px;"  class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+                <hr>
+ 
+        
+              </div>
+            
+          </div>
+          
+        </section>  
+
+    
+    
+</div>
+<!--Google map-->
+
+</div>
+
+
+<!--Google Maps-->

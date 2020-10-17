@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  .section-div{
+   background:linear-gradient(0deg, rgba(34, 35, 50, 0.5), rgba(34, 35, 40, 0.5)), url('../../assets/images/jani.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+ 
+  .filter-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    background: #161619;
+    padding-left: 480px !important;
+    border-top: 1px solid #a38f38;
+  }
+  
+  .filter-links li {
+    display: inline;
+    float: left;
+  }
+  
+  .filter-links li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 1em 2em;
+    font-family: 'Cuprum', sans-serif;
+    text-decoration: none;
+  }
+  
+  .filter-links li a:hover {
+    color: #a38f38;
+  }
+  
+  .filter-sections {
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    margin-left: 180px;
+    position: sticky;
+  
+  }
+  
+  .filter-sections div {
+    opacity: 0;
+    display: none;
+    min-height: 50px;
+    margin: 0.5em;
+    text-align: center;
+    padding: 2em 1em;
+    float: left;
+    transition: all 500s ease;
+  }
+  
+img{
+  transition: transform .2s; /* Animation */
+  cursor: pointer;
+}
+img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+  
+  .view {
+    display: block !important;
+    opacity: 1 !important;
+    transform: scale(1) rotate(0deg);
+    border-radius:4px;
+    animation: selected 300ms 1 ease-in-out;
+  }
+  
+  @keyframes selected {
+    0% {
+      border-radius:100%;
+      transform: scale(0) rotate(-180deg);
+    }
+  }
+  
+  .javascript{
+    color:black;
+  }
+  .html{
+    color:white;
+  }
+  .css{
+    color:white;
+  }
+  .php{
+    color:white;
+  }
+/* ------------------- */
+/* TEMPLATE        -- */
+/* ----------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+body { 
+	height: 100%; width: 100%; 
+	background-color: #333; 
+	color: whitesmoke; 
+	font-size: 16px; 
+	font-family: 'Lato';
+} 
+h1 {color: white; font-size: 42px;margin-top: 10px; margin-bottom: 20px; font-family: 'Cuprum', sans-serif;}
+h2 { font-size: 26px; }
+h3 { font-size: 18px; }
+p { margin: 15px 0; line-height: 24px; color: gainsboro; }
+a { color: dodgerblue; text-decoration: none; }
+a:hover { color: tomato; }
+
+.container { 
+	max-width: 960px; 
+	height: 100%;
+	margin: 0 auto; 
+	padding: 20px;
+	text-align: center;
+}
+
+/* ----------------- */
+/* Sixth */
+
+h1.sixth { position: relative;
+}
+
+h1.sixth:before,
+h1.sixth:after {
+	content: '[';
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	height: 100%;
+	font-size: 1.25em;
+	color:  #a38f38;
+	transition: all 0.5s ease;
+}
+
+h1.sixth:after { content: ']'; }
+
+h1.sixth:hover:before { 
+	transform: translateX(-5px);
+}
+
+h1.sixth:hover:after { 
+	transform: translateX(5px);
+}
+
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#imaged {
+  line-height: 1.5em;
+}
+.imgDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+footer{
+  background-color:#17171e;
+}
+i{
+  color: white;
+}
+@media only screen   and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+   
+  .filter-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #161619;
+    padding-left: 0px !important;
+    border-top: 1px solid #a38f38;
+  }
+  .filter-links li a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 1em 2em;
+    font-family: "Cuprum", sans-serif;
+    text-decoration: none;
+  }
+  h1{
+    font-size: 42px !important;
+  }
+  .filter-sections {
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    margin-left: 10px;
+    position: sticky;
+  
+  }
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+   
+    .filter-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      background: #161619;
+      padding-left: 0px !important;
+      border-top: 1px solid #a38f38;
+    }
+    .filter-links li a {
+      display: block;
+      color: white;
+      font-size: 15px;
+      padding: 1em 2em;
+      font-family: "Cuprum", sans-serif;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 42px !important;
+    }
+    .filter-sections {
+      width: 90%;
+      display: block;
+      overflow: hidden;
+      margin-left: 10px;
+      position: sticky;
+    
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+   
+    .filter-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      background: #161619;
+      padding-left: 0px !important;
+      border-top: 1px solid #a38f38;
+    }
+    .filter-links li a {
+      display: block;
+      color: white;
+      font-size: 15px;
+      padding: 1em 2em;
+      font-family: "Cuprum", sans-serif;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 42px !important;
+    }
+    .filter-sections {
+      width: 90%;
+      display: block;
+      overflow: hidden;
+      margin-left: 10px;
+      position: sticky;
+    
+    }
+}
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .filter-sections {
+      width: 90%;
+      display: block;
+      overflow: hidden;
+      margin-left: 40px;
+      position: sticky;
+    
+    }
+}
+@media only screen 
+  and (min-device-width: 311px) 
+  and (max-device-width: 610px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+    .filter-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      background: #161619;
+      padding-left: 0px !important;
+      border-top: 1px solid #a38f38;
+    }
+    .filter-links li a {
+      display: block;
+      color: white;
+      font-size: 15px;
+      padding: 1em 2em;
+      font-family: "Cuprum", sans-serif;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 42px !important;
+    }
+    .filter-sections {
+      width: 90%;
+      display: block;
+      overflow: hidden;
+      margin-left: 10px;
+      position: sticky;
+    
+    }
+}
+@media only screen and (max-width: 600px) {
+  .filter-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #161619;
+    padding-left: 0px !important;
+    border-top: 1px solid #a38f38;
+  }
+  .filter-links li a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    padding: 1em 2em;
+    font-family: "Cuprum", sans-serif;
+    text-decoration: none;
+  }
+  h1{
+    font-size: 42px !important;
+  }
+  .filter-sections {
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    margin-left: 10px;
+    position: sticky;
+  
+  }
+  .imgDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+}
