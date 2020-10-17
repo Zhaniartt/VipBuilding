@@ -19,6 +19,7 @@ import { ServicesComponent } from './services/services.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ContactService } from '../contact.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 const config = {
   apiKey: 'AIzaSyDO9vuk0XDRUCjQdsvy8iqJf0_1DblyLyA',
@@ -51,6 +52,7 @@ const config = {
     AngularFireAuthModule, // auth
     AngularFireStorageModule,
      FontAwesomeModule,
+     ScullyLibModule,
   ],
   providers: [AuthService,  ContactService],
   bootstrap: [AppComponent]
