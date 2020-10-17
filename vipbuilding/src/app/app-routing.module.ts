@@ -11,11 +11,11 @@ import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {path: '', component: NavbarComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'login' , component:LoginComponent},
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  {path: 'contacts' , component: ContactsComponent},
-  {path: 'services', component: ServicesComponent}
+  {path: '/about', component: AboutComponent},
+  {path: '/login' , component:LoginComponent},
+  { path: '/dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  {path: '/contacts' , component: ContactsComponent},
+  {path: '/services', component: ServicesComponent}
 ];
 
 @NgModule({

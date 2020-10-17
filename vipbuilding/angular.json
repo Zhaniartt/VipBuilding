@@ -25,8 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/_redirects"
+              "src/_redirects",
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss",
